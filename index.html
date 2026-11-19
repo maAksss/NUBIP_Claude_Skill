@@ -198,6 +198,22 @@ h3+.steps{margin-top:12px}
 .faq{display:grid;grid-template-columns:1fr 1fr;gap:0 18px;align-items:start}
 @media(max-width:900px){.faq{grid-template-columns:1fr}.faqbar input{margin-left:0}}
 .faq details[hidden]{display:none}.faq details p{margin:10px 0 0}.faq summary{padding-right:6px}
+ 
+ /* v6  Mob*/
+ @media(max-width:860px){
+ body{font-size:17px}
+ .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:0;padding:24px;max-width:1120px}
+ nav{position:static;display:flex;flex-wrap:wrap;gap:6px}
+ nav b,nav .bar,#pt{display:none}
+ nav a{border:1px solid var(--line);border-radius:20px;padding:4px 12px}
+ section{margin-top:64px}
+ .hero{display:block;padding:26px 20px}
+ .hero h1{max-width:20ch;font-size:clamp(30px,5vw,48px)}
+ .step{grid-template-columns:minmax(0,1fr);padding:20px}
+ ol.steps::before{display:none}
+ .pic img{max-height:430px}
+ #intro{columns:auto}
+}
 </style>
 </head>
 <body>
