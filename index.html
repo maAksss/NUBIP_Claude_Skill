@@ -20,6 +20,9 @@ nav a.on{border-color:var(--accent);color:var(--ink);font-weight:700;background:
 .bar{height:8px;background:var(--line);border-radius:8px;overflow:hidden;margin:18px 0 6px}
 .bar i{display:block;height:100%;width:0;background:var(--ok);transition:width .4s}
 #pt{font-size:14px;color:var(--muted)}
+.navbtns{display:flex;flex-direction:column;gap:10px;margin-top:18px}
+nav .navbtns a.btn{display:block;padding:10px 18px;border:0;border-radius:8px;background:var(--accent);color:#fff;font-size:15px;font-weight:700;text-align:center;text-decoration:none}
+@media(max-width:860px){.navbtns{flex-direction:row;flex-wrap:wrap;margin-top:0}nav .navbtns a.btn{border-radius:8px;padding:10px 18px}}
 header{padding:28px 0 8px}
 h1{font-size:clamp(30px,5vw,48px);line-height:1.1;margin:0 0 14px;font-weight:800;letter-spacing:-.02em}
 h2{font-size:30px;margin:0 0 6px;font-weight:800}
@@ -228,6 +231,10 @@ h3+.steps{margin-top:12px}
   <a href="#faq">Часті питання</a>
   <div class="bar"><i id="bar"></i></div>
   <div id="pt">Відмічайте кроки, які виконали</div>
+  <div class="navbtns">
+    <a class="btn" href="https://maaksss.github.io/NUBIP_Claude_Skill/Навчальне_відео_Claude_Skill.mp4" target="_blank" rel="noopener">Навчальне відео</a>
+    <a class="btn" href="https://github.com/maAksss/NUBIP_Claude_Skill/tree/main" target="_blank" rel="noopener">Репозиторій</a>
+  </div>
 </nav>
 
 <main>
